@@ -1,0 +1,23 @@
+{
+  "name": "white-background",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite --host 127.0.0.1",
+    "build": "vite build",
+    "preview": "vite preview --host 127.0.0.1",
+    "postinstall": "node scripts/patch-background-removal.mjs",
+    "predev": "node scripts/patch-background-removal.mjs",
+    "prebuild": "node scripts/patch-background-removal.mjs",
+    "test": "node scripts/patch-background-removal.mjs && node --test src/*.test.js"
+  },
+  "dependencies": {
+    "@imgly/background-removal": "1.7.0",
+    "jszip": "3.10.1",
+    "onnxruntime-web": "1.21.0"
+  },
+  "devDependencies": {
+    "vite": "6.3.6"
+  }
+}

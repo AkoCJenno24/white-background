@@ -1,0 +1,9 @@
+node_modules/
+dist/
+.sites-runtime/
+*.tar.gz
+.qa/
+.openai/
+.DS_Store
+Thumbs.db
+white-background/
